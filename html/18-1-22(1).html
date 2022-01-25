@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>HTML Forms - 121910315006</title>
+</head>
+
+<body>
+    <form action="18-1-22(2).html" method="GET">
+        <h3>Online Bus Booking Form</h3>
+        <table>
+            <tr>
+                <td><label for="full-name">Full Name:</label></td>
+                <td><input type="text" id="first-name" name="full-name" size="15" maxlength="25"
+                        placeholder="First Name" required /> <input type="text" id="last-name" name="full-name" size="15"
+                        maxlength="25" placeholder="Last Name" required /></td>
+            </tr>
+            <tr>
+                <td><label for="email">E-mail: </label></td>
+                <td><input type="email" name="email" size="20" maxlength="100" placeholder="ex: myname@example.com"
+                        required /></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password: </label></td>
+                <td><input type="password" name="password" size="20" required /></td>
+            </tr>
+            <tr>
+                <td><label for="phno">Phone No.: </label></td>
+                <td><input type="number" name="phno" size="10" maxlength="10" required /></td>
+            </tr>
+            <tr>
+                <td><label for="pickup-address">Pickup Address:</label></td>
+                <td><textarea rows="4" cols="50" name="pickup-address"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="destination-address">Destination Address:</label></td>
+                <td><textarea rows="4" cols="50" name="destination-address"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="dept-dt">Departure Date/Time:</label></td>
+                <td><input type="datetime-local" name="dept-dt"></td>
+            </tr>
+            <tr>
+                <td><label for="ret-dt">Return Date/Time:</label></td>
+                <td><input type="datetime-local" name="ret-dt"></td>
+            </tr>
+            <tr>
+                <td><label for="j-type">Journey Type:</label></td>
+                <td><input type="radio" id="one-way" name="j-type" value="one-way"><label
+                        for="one-way">One-Way</label> <input type="radio" id="return" name="j-type" value="return"><label
+                        for="return">Return</label><br></td>
+            </tr>
+            <tr>
+                <td><label for="v-type">Vehicle Preference:</label></td>
+                <td><select name="v-type" required>
+                        <option value="tata">Tata</option>
+                        <option value="eicher">Eicher</option>
+                        <option value="ashok-leyland">Ashok Leyland</option>
+                        <option value="bharat-benz">Bharat Benz</option>
+                        <option value="mazda">Mazda</option>
+                        <option value="mahindra">Mahindra</option>
+                    </select></td>
+            </tr>
+            <tr>
+                <td><label for="ps-count">Number of passengers:</label></td>
+                <td><input type="number" name="ps-count" size="3" min="1" max="25" required></td>
+            </tr>
+        </table>
+        <input type="submit" name="submit"/><br/>
+        <label for="submit"><small>Submit to GET Frames HTML page</small></label>
+    </form>
+</body>
+
+</html>
