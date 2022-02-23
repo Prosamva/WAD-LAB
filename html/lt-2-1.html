@@ -1,0 +1,103 @@
+<!-- Create a Registration Form and it should contain all types of Buttons. -->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>121910315006 - Registration Form</title>
+</head>
+
+<body>
+    <form action="lt-2-2.html" method="GET">
+        <h3>Registration Form</h3>
+        <table>
+            <tr>
+                <td><label for="full-name">Full Name:</label></td>
+                <td><input type="text" id="first-name" name="full-name" size="15" maxlength="25"
+                        placeholder="First Name" required> <input type="text" id="last-name" name="full-name"
+                        size="15" maxlength="25" placeholder="Last Name" required></td>
+            </tr>
+            <tr>
+                <td><label for="roll-no">Roll no:</label></td>
+                <td><input type="number" name="roll-no" size="3" min="1" max="70" required></td>
+            </tr>
+            <tr>
+                <td><label for="email">E-mail: </label></td>
+                <td><input type="email" name="email" size="20" maxlength="100" placeholder="e.g.: abc@gitam.in"
+                        required></td>
+            </tr>
+            <tr>
+                <td><label for="password">Password:</label></td>
+                <td><input type="password" name="password" size="20" required></td>
+            </tr>
+            <tr>
+                <td><label for="phno">Phone No.:</label></td>
+                <td><input type="number" name="phno" size="10" maxlength="10" required></td>
+            </tr>
+            <tr>
+                <td><label for="address">Address:</label></td>
+                <td><textarea rows="4" cols="50" name="address"></textarea></td>
+            </tr>
+            <tr>
+                <td><label for="dob">Date of Birth:</label></td>
+                <td><input type="date" name="dob" required></td>
+            </tr>
+            <tr>
+                <td><label for="crt-start">CRT Start Time:</label></td>
+                <td><input type="time" min="09:00" max="18:00" name="crt-start" required></td>
+            </tr>
+            <tr>
+                <td><label for="type">Type:</label></td>
+                <td>
+                    <input type="radio" id="day-scholar" name="type" value="day-scholar"><label for="day-scholar">Day
+                        Scholar</label>
+                    <input type="radio" id="hosteler" name="type" value="hosteler"><label
+                        for="hosteler">Hosteler</label><br>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="v-type">Means of Transport: </label></td>
+                <td>
+                    <select name="v-type" required>
+                        <option value="foot">Foot</option>
+                        <option value="two-wheeler">Motorbike/Scooter/Two-Wheelers</option>
+                        <option value="four-wheeler">Car/Four-Wheelers</option>
+                        <option value="college-bus">College Bus</option>
+                        <option value="public-transport">Public Transport</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><label for="subjects">Subjects Chosen: </label></td>
+                <td>
+                    <input type="checkbox" id="WAD" name="WAD">
+                    <label for="WAD">Web Application Development</label><br>
+
+                    <input type="checkbox" id="AI" name="AI">
+                    <label for="AI">Artificial Intelligence</label><br>
+
+                    <input type="checkbox" id="CD" name="CD">
+                    <label for="CD">Compiler Design</label><br>
+
+                    <input type="checkbox" id="EEM" name="EEM">
+                    <label for="EEM">Engineering Economics and Management</label><br>
+
+                    <input type="checkbox" id="CS" name="CS">
+                    <label for="CS">Cyber Security</label><br>
+
+                    <input type="checkbox" id="CC" name="CC">
+                    <label for="CC">Cloud Computing</label><br>
+
+                    <input type="checkbox" id="ML" name="ML">
+                    <label for="ML">Machine Learning</label><br>
+
+                    <input type="checkbox" id="CSD" name="CSD">
+                    <label for="CSD">Comprehensive Skill Development</label><br>
+                </td>
+            </tr>
+        </table>
+        <input type="reset" name="reset"> <input type="submit" name="submit"> <input type="button" name="button" onclick="alert('Fill the form!')" value="Help">
+    </form>
+</body>
+
+</html>

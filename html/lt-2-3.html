@@ -1,0 +1,41 @@
+<!-- Create, test and validate an HTML Document that defines a table that has two levels of column labels: Overall label, Meals and three secondary labels - Brunch, Lunch, Dinner. There must be two levels of row labels - Veg and NV and entered the Data. -->
+
+<html>
+<head>
+    <title>121910315006 - 2 Level Table</title>
+    <style>
+        table{
+            border-collapse: collapse;
+        }
+        th, td{
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <table border="2">
+        <tr>
+            <th rowspan="2" colspan="2"></th>
+            <th colspan="3">MEALS</th>
+        </tr>
+        <tr>
+            <th>Brunch</th>
+            <th>Lunch</th>
+            <th>Dinner</th>
+        </tr>
+        <tr>
+            <th rowspan="2">OPTION</th>
+            <th>Veg</th>
+            <td>Idli</td>
+            <td>Pulao</td>
+            <td>Chapati</td>
+        </tr>
+        <tr>
+            <th>Non-veg</th>
+            <td>Omelette</td>
+            <td>Chicken</td>
+            <td>Fish</td>
+        </tr>
+    </table>
+</body>
+</html>
