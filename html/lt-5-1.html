@@ -1,0 +1,20 @@
+<html>
+
+<head>
+    <title>121910315006 - Random Color</title>
+    <script>
+        function random_color(){
+            var color = [];
+            for(var i = 0; i<3; ++i)
+                color.push(Math.round(Math.random()*255));
+            document.body.style.backgroundColor = `rgb(${color.join(", ")})`
+            console.log(color.join(', '));
+        }
+    </script>
+</head>
+
+<body onclick="random_color()" onload="random_color()">
+    <button onclick="random_color()">Change Color</button>
+</body>
+
+</html>
