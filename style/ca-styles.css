@@ -1,0 +1,36 @@
+h2.title{
+    color: blue;
+    font-family: sans-serif;
+    font-weight: lighter;
+    font-size: 36pt;
+    margin: 5px;
+}
+td {
+    padding: 5px;
+}
+
+td.lbc{
+    font-weight: bold;
+    background-color: rgb(167, 42, 11);
+    color: #fff;
+    font-family: sans-serif;
+}
+
+input.btn{
+    padding: 8px 14px;
+    border: none;
+    color: rgb(102, 61, 0);
+    border-radius: 5px;
+    background-color: rgb(250, 197, 127);
+}
+
+input.btn:hover{
+    color: rgb(250, 197, 127);
+    background-color: rgb(102, 61, 0);
+
+}
+
+#hpt{
+    font-size: 10pt;
+    color: #888;
+}
