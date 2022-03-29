@@ -23,6 +23,7 @@
                 else if(day==6) s+= d +'</tr>';
                 else s+=d;
             }
+            if((startDayWeek+lastDay)%7!=0)
             for(var i = (startDayWeek+lastDay)%7; i<7; ++i) s+='<td></td>'
             s+='</tr>'
             
