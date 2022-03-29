@@ -5,18 +5,20 @@
     <script>
         var c1 = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pretium mi vel fermentum pulvinar. Nullam cursus volutpat odio quis dictum. Nunc velit nibh, bibendum id neque non, pharetra sollicitudin neque. Donec vel placerat diam. Nulla ultricies lectus at nisi posuere viverra. Etiam convallis eros at ipsum commodo, quis pulvinar sem auctor. Morbi sollicitudin, ex vitae venenatis pharetra, tortor nunc lobortis lorem, eu pretium ante orci id dui. Sed at nulla at est iaculis dictum. Praesent dignissim, nunc ac mattis placerat, dui quam ullamcorper risus, id elementum nisl est quis nisi. Sed dignissim odio ac pellentesque fringilla. Vivamus in magna id eros eleifend accumsan a at nibh. Morbi aliquam condimentum tellus nec lacinia. Nullam non consectetur nibh, sit amet sollicitudin urna. Nulla facilisi.";
         var c2 = '<img src="https://upload.wikimedia.org/wikipedia/commons/5/56/Bas%C3%ADlica_Nuestra_Se%C3%B1ora_del_Pilar_%28Buenos_Aires%29.jpg" width="200"><br>Vestibulum faucibus tincidunt sollicitudin. Aenean ac gravida ipsum. Phasellus mauris dui, rutrum scelerisque eros vel, volutpat tincidunt turpis. Vivamus accumsan varius velit quis eleifend. Cras tincidunt sagittis nulla, aliquam bibendum leo sollicitudin vel. Nullam eget bibendum lectus. In eu bibendum tortor. Vestibulum id aliquet sapien. Pellentesque sapien magna, consequat ut accumsan et, blandit sed nunc. Mauris in mauris lacus. Donec commodo dictum efficitur. Donec semper vitae lectus eu congue. Donec porttitor, erat sit amet cursus consequat, diam lorem volutpat magna, eget varius ex dolor id sem. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Ut vel risus in metus malesuada viverra eu at ante. Etiam ornare odio et tristique sollicitudin.';
-        function mouseOn(element) {
-            element.innerHTML = c2;
+        function mouseOn() {
+            document.getElementById('content').innerHTML = c2;
         }
-        function mouseOff(element) {
-            element.innerHTML = c1;
+        function mouseOff() {
+            document.getElementById('content').innerHTML = c1;
+        }
+        function showContent() {
+            mouseOff();
         }
     </script>
 </head>
 
-<body>
-    <p id="content" onmouseover="mouseOn(this)" onmouseout="mouseOff(this)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce pretium mi vel fermentum pulvinar. Nullam cursus volutpat odio quis dictum. Nunc velit nibh, bibendum id neque non, pharetra sollicitudin neque. Donec vel placerat diam. Nulla ultricies lectus at nisi posuere viverra. Etiam convallis eros at ipsum commodo, quis pulvinar sem auctor. Morbi sollicitudin, ex vitae venenatis pharetra, tortor nunc lobortis lorem, eu pretium ante orci id dui. Sed at nulla at est iaculis dictum. Praesent dignissim, nunc ac mattis placerat, dui quam ullamcorper risus, id elementum nisl est quis nisi. Sed dignissim odio ac pellentesque fringilla. Vivamus in magna id eros eleifend accumsan a at nibh. Morbi aliquam condimentum tellus nec lacinia. Nullam non consectetur nibh, sit amet sollicitudin urna. Nulla facilisi.
-    </p>
+<body onload="showContent()">
+    <p id="content" onmouseover="mouseOn()" onmouseout="mouseOff()"></p>
 </body>
 
 </html>
