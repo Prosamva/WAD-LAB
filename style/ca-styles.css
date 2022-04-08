@@ -15,6 +15,11 @@ td.lbc{
     color: #fff;
     font-family: sans-serif;
 }
+img{
+    height: 72px;
+    width: 100%;
+    object-fit: cover;
+}
 
 input.btn{
     padding: 8px 14px;
